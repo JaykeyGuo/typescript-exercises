@@ -40,12 +40,14 @@ interface Admin {
   role: string;
 }
 
-interface Person {
-    name: string;
-    age: number;
-    occupation?: string;
-    role?: string
-}
+// interface Person {
+//     name: string;
+//     age: number;
+//     occupation?: string;
+//     role?: string
+// }
+
+type Person = User | Admin;
 
 const persons: Person[] /* <- Person[] */ = [
     {
